@@ -1,0 +1,10 @@
+npm install -D webpack webpack-cli webpack-dev-server
+
+npm install -g webpack
+
+webpack не работает, см. видео дальше, создай скрипт build и serve
+
+https://webpack.js.org/plugins/html-webpack-plugin/
+
+
+
