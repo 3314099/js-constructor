@@ -1,11 +1,11 @@
-const style = 'margin: 0;'
+const style = 'margin: 0;';
 
 function row(content, styles = '') {
-	return `<div class="row" style="${style} ${styles}">${content}</div>`
+  return `<div class="row" style="${style} ${styles}">${content}</div>`;
 }
 
 function col(content) {
-	return `<div class="col-sm">${content}</div>`
+  return `<div class="col-sm">${content}</div>`;
 }
 
-export {row, col}
+export { row, col };

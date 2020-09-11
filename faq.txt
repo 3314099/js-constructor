@@ -1,3 +1,10 @@
+git init
+создать .gitignore:
+/node_modules
+/dist
+.idea
+
+
 npm install -D webpack webpack-cli webpack-dev-server
 
 npm install -g webpack
@@ -15,4 +22,30 @@ npm install --save-dev style-loader css-loader
 https://webpack.js.org/loaders/file-loader/
 npm install file-loader --save-dev
 
+ESLint:
+npm i --save-dev
+eslint
+eslint-config-airbnb // styleGuide
+eslint-config-prettier // для совместной работы prettier и ESlint
+eslint-plugin-html // проверка и исправление ошибок в html в теге  script
+eslint-plugin-import // import/export/пути к файлам
+eslint-plugin-jsx-a11y // правила доступности для людей с ограниченными возможностями
+eslint-plugin-prettier //
+prettier
+
+npm i --save-dev eslint eslint-config-airbnb eslint-config-prettier eslint-plugin-html eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-prettier prettier
+
+создать в корне проекта .eslintrc:
+{"extends": [
+    "airbnb/base" // /base игнорирует данные, требуемые  для React
+]}
+
+создать в корне проекта .eslintignore:
+/node_modules
+/.idea
+/.git
+
+создать в package.json в "scripts":
+"lint": "eslint ./src",
+"lint:fix": "eslint ./src --fix"
 
