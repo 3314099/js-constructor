@@ -11,5 +11,8 @@ https://webpack.js.org/plugins/html-webpack-plugin/
 https://webpack.js.org/loaders/style-loader/
 npm install --save-dev style-loader css-loader
 
+для изображений
+https://webpack.js.org/loaders/file-loader/
+npm install file-loader --save-dev
 
 
