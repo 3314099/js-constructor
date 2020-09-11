@@ -1,5 +1,7 @@
+const style = 'margin: 0;'
+
 function row(content, styles = '') {
-	return `<div class="row" style="${styles}">${content}</div>`
+	return `<div class="row" style="${style} ${styles}">${content}</div>`
 }
 
 function col(content) {
