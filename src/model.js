@@ -2,6 +2,7 @@ import image from './assets/image.jpg';
 import {
   TitleBlock, ImageBlock, TextBlock, TextColumnsBlock,
 } from './classes/blocks';
+import {css} from './utils'
 
 const lorem = `"Что такое JavaScript?" 
 <br> 
@@ -32,7 +33,12 @@ const text = [
 export const model = [
   new TitleBlock('Javascript', {
     tag: 'h1',
-    styles: 'background: linear-gradient(to right, #ff0099, #493240);color: #fff;padding: 1.5rem;text-align: center;',
+    styles: css({
+      background: 'linear-gradient(to right, #ff0099, #493240)',
+      color: '#fff',
+      padding: '1.5rem',
+      'text-align': 'center'
+    })
   }),
   new ImageBlock(image, {
     styles: 'padding: 2rem 0; display: flex; justify-content: center;',
@@ -41,12 +47,20 @@ export const model = [
   }),
   new TextBlock(lorem, {
     tag: 'h4',
-    styles: 'padding: 2rem 0; background: linear-gradient(to right, #f7bc25, #76f725);color: #000;',
+    styles: css({
+        padding: '2rem 0',
+        background: 'linear-gradient(to right, #f7bc25, #76f725)',
+        color: '#000'
+    })
   }),
   new TextColumnsBlock([
     text[0], text[1], text[2], text[3],
   ], {
-    styles: 'padding: 2rem 0; color: #fff;background: linear-gradient(to bottom, #8e2de2,'
-			+ ' #4a00e0); font-weight: bold;',
+    styles: css({
+      padding: '2rem 0',
+      color: '#fff',
+      background: 'linear-gradient(to bottom, #8e2de2, #4a00e0)',
+      'font-weight': 'bold'
+    })
   }),
 ];

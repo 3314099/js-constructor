@@ -5,6 +5,11 @@ import './styles/main.css';
 
 const site = new Site('#site')
 
-new SideBar('#nav')
+const apdateCallBack = newBlock => {
+	model.push(newBlock)
+	site.render(model)
+}
+
+new SideBar('#nav', apdateCallBack)
 
 site.render(model)
